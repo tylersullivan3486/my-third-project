@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document encoding and responsive viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+    
+    <!-- Google Fonts preconnect: improves font loading performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Inter font family: weights 400, 500, 600, 700 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main stylesheet: contains all component styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page identifier: fixed label at top of page -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+    
+    <!-- Pricing cards container: flexbox layout for side-by-side cards -->
     <div class="cards-container">
+        
+        <!-- Hobby Plan Card: free tier pricing option -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +48,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary button style: light background -->
             <button class="download-button secondary">Download</button>
         </div>
+        
+        <!-- Pro Plan Card: paid tier pricing option -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,7 +82,59 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary button style: dark background for emphasis -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Org</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$30</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and SAML
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="download-button primary">Get Enterprise</button>
+        </div>
+        <!-- Enterprise Plan Card: top tier with custom pricing -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and SAML
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom usage limits
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team management
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Primary button: contact CTA for custom plans -->
+            <button class="download-button primary">Contact sales</button>
         </div>
     </div>
 </body>

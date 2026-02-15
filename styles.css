@@ -1,9 +1,19 @@
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+
+/* Universal reset: removes default browser margins and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ============================================
+   PAGE LAYOUT
+   ============================================ */
+
+/* Main page container: centers content vertically and horizontally */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +24,7 @@ body {
     padding: 20px;
 }
 
+/* Cards wrapper: horizontal flex layout with spacing */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +34,11 @@ body {
     align-items: flex-start;
 }
 
+/* ============================================
+   PRICING CARD COMPONENT
+   ============================================ */
+
+/* Individual pricing card: fixed width, vertical layout */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +50,17 @@ body {
     flex-shrink: 0;
 }
 
+/* Card header section: contains title and price */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+/* Plan name: Hobby, Pro, etc. */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +69,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price container: flex layout for amount and period alignment */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +77,42 @@ body {
     align-items: baseline;
 }
 
+/* Price amount: main price value (e.g., "$20" or "Free") */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Price period: billing frequency (e.g., "/mo.") */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Features section wrapper */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* "Includes:" or "Everything in Hobby, plus:" text */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* ============================================
+   FEATURES LIST
+   ============================================ */
+
+/* Unordered list: removes default bullets */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* List item: horizontal flex layout for checkmark and text */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +121,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon: check symbol before each feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +129,11 @@ body {
     font-weight: 400;
 }
 
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+/* Base button: rounded pill shape, positioned at card bottom */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +148,37 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Button hover state: lighter background on hover */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Button active state: same as hover for click feedback */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primary button variant: dark background for emphasis (Pro plan) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Primary button hover: lighter dark shade */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Primary button active: same as hover */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* ============================================
+   PAGE LABEL
+   ============================================ */
+
+/* Fixed label: positioned at top center of viewport */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +192,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Label emphasis: bold text styling */
 .page-label strong {
     color: #333;
 }
